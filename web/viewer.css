@@ -7764,3 +7764,51 @@ html, body {
   padding: 0;
   background: white;
 }
+
+/* ===== CLEAN EMBED FIX (NO BLANK SPACE) ===== */
+
+/* Hide UI elements */
+#toolbarContainer,
+#secondaryToolbar,
+#sidebarContainer {
+  display: none !important;
+}
+
+/* CRITICAL: remove reserved layout offsets */
+#mainContainer {
+  top: 0 !important;
+  left: 0 !important;
+}
+
+/* CRITICAL: remove sidebar layout shift */
+#outerContainer.sidebarOpen #mainContainer {
+  left: 0 !important;
+}
+
+/* Remove toolbar height reservation */
+#viewerContainer {
+  top: 0 !important;
+}
+
+/* Remove page counter + zoom UI */
+#pageNumber,
+#numPages,
+#scaleSelectContainer,
+#zoomIn,
+#zoomOut {
+  display: none !important;
+}
+
+/* Remove “app feel” */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  overflow: hidden;
+}
+
+/* Remove inner PDF page framing */
+.pdfViewer .page {
+  box-shadow: none !important;
+  margin: 0 auto;
+}
