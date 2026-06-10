@@ -7749,22 +7749,6 @@ dialog :link{
   }
 }
 
-#toolbarContainer,
-#secondaryToolbar,
-#sidebarContainer {
-  display: none !important;
-}
-
-#mainContainer {
-  top: 0 !important;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  background: white;
-}
-
 /* ===== CLEAN EMBED FIX (NO BLANK SPACE) ===== */
 
 /* Hide UI elements */
