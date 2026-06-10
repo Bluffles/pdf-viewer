@@ -7796,3 +7796,33 @@ html, body {
   box-shadow: none !important;
   margin: 0 auto;
 }
+
+/* ===== REMOVE WHITE BACKGROUND / BORDER ===== */
+
+/* Viewer background */
+#viewerContainer {
+  background: transparent !important;
+}
+
+/* Outer app container */
+#outerContainer {
+  background: transparent !important;
+}
+
+/* Page “paper” background */
+.pdfViewer .page {
+  margin: 0 !important;
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Canvas itself */
+.pdfViewer .page canvas {
+  background: transparent !important;
+}
+
+/* Remove default PDF.js page spacing */
+.pdfViewer {
+  padding: 0 !important;
+}
