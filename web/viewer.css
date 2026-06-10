@@ -7748,3 +7748,19 @@ dialog :link{
     display:none;
   }
 }
+
+#toolbarContainer,
+#secondaryToolbar,
+#sidebarContainer {
+  display: none !important;
+}
+
+#mainContainer {
+  top: 0 !important;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: white;
+}
