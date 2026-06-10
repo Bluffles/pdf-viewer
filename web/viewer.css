@@ -7847,3 +7847,38 @@ html, body {
 .pdfViewer .page canvas {
   background: transparent !important;
 }
+
+
+/* ===== NUCLEAR REMOVE PAGE "PAPER" LOOK ===== */
+
+#viewerContainer {
+  background: transparent !important;
+}
+
+/* THIS is the real paper layer */
+.pdfViewer .page {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+}
+
+/* PDF.js sometimes uses an inner page canvas wrapper */
+.pdfViewer .pageContainer {
+  background: transparent !important;
+}
+
+/* Kill any white fill on canvas */
+.pdfViewer .page canvas {
+  background: transparent !important;
+}
+
+/* Remove default page spacing that creates "borders" */
+.pdfViewer {
+  padding: 0 !important;
+}
+
+/* CRITICAL: remove page “gap” illusion */
+.pdfViewer .page {
+  outline: none !important;
+}
