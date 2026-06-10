@@ -7826,3 +7826,24 @@ html, body {
 .pdfViewer {
   padding: 0 !important;
 }
+
+.pdfViewer,
+.pdfViewer .pageContainer,
+.pdfViewer .page,
+#viewerContainer,
+#outerContainer {
+  background: transparent !important;
+}
+
+/* THIS is the key one people miss */
+.pdfViewer .page {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+}
+
+/* remove page “card” effect completely */
+.pdfViewer .page canvas {
+  background: transparent !important;
+}
