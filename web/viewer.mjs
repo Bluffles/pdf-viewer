@@ -18382,7 +18382,7 @@ const PDFViewerApplication = {
     };
     if (params.get("disableworker") === "true") {
       try {
-        GlobalWorkerOptions.workerSrc ||= AppOptions.get("workerSrc");
+        GlobalWorkerOptions.workerSrc ||= AppOptions.get("workerSrc","https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js");
         await import(
         /*webpackIgnore: true*/
         /*@vite-ignore*/
